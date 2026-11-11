@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "requireEchoShard": true,
+  "neutralColor": "invert",
+  "mediumColor": "#FFD933",
+  "highColor": "#FF4033"
+}

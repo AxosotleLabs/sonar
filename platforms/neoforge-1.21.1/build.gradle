@@ -1,0 +1,22 @@
+plugins {
+    id 'net.neoforged.moddev'
+}
+
+apply from: rootProject.file('gradle/platform.gradle')
+
+neoForge {
+    version = project.neo_version
+    runs {
+        client {
+            client()
+            gameDirectory = rootProject.file('run')
+        }
+    }
+    mods {
+        "${rootProject.mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+neoForge.ideSyncTask tasks.named('generateModMetadata')

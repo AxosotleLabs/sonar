@@ -1,0 +1,55 @@
+# Gradle
+.gradle/
+build/
+out/
+bin/
+!gradle/wrapper/gradle-wrapper.jar
+local.properties
+.kotlin/
+
+# Сборки мода
+dist/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Запуск игры из IDE
+run/
+runs/
+logs/
+crash-reports/
+*.log
+
+# Loom / ModDevGradle / ForgeGradle
+.architectury-transformer/
+remappedSrc/
+classes/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Прочее
+*.tmp
+*.swp
+*~

@@ -1,0 +1,22 @@
+plugins {
+    id 'net.neoforged.moddev.legacyforge'
+}
+
+apply from: rootProject.file('gradle/platform.gradle')
+
+legacyForge {
+    version = project.forge_version
+    runs {
+        client {
+            client()
+            gameDirectory = rootProject.file('run')
+        }
+    }
+    mods {
+        "${rootProject.mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+legacyForge.ideSyncTask tasks.named('generateModMetadata')

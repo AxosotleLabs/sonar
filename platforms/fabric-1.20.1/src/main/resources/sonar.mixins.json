@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.axolabs.sonar.fabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": ["SoundEngineMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
